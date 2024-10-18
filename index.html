@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Inter";
+      }
+      .card-wrapper {
+        background-color: hsl(0, 0%, 8%);
+        display: flex;
+        justify-content: center;
+        min-height: 100svh;
+        align-items: center;
+        padding: 1rem 2rem;
+      }
+      .card-container {
+        background-color: hsl(0, 0%, 12%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+      }
+      .card-image {
+        width: 100px;
+        border-radius: 50%;
+      }
+      .card-header {
+        text-align: center;
+      }
+      .card-header p {
+        font-size: 14px;
+        margin-top: 14px;
+      }
+
+      .card-profile h1,
+      .card-profile h3 {
+        font-weight: 500;
+      }
+      .card-profile h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+      }
+      .card-profile h3 {
+        font-size: 14px;
+        color: hsl(75, 94%, 57%);
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        font-weight: 600;
+      }
+      .card-body button {
+        background-color: hsl(0, 0%, 20%);
+        border: none;
+        padding: 0.8rem;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .card-body button:hover {
+        background-color: hsl(75, 94%, 57%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <div class="card-container">
+        <div class="card-header">
+          <img
+            src="assets/images/avatar-jessica.jpeg"
+            alt=""
+            class="card-image"
+          />
+          <div class="card-profile">
+            <h1>Jessica Randall</h1>
+            <h3>London, United Kingdom</h3>
+          </div>
+          <p>"Front-end developer and avid reader."</p>
+        </div>
+        <div class="card-body">
+          <button>GitHub</button>
+          <button>Frontend Mentor</button>
+          <button>LinkedIn</button>
+          <button>Twitter</button>
+          <button>Instagram</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
